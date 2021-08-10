@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+
+/* COLORS */
+
+/* PRIMARY COLORS */
+
+--clr-primary-cyan: hsl(171, 66%, 44%);
+--clr-primary-blue: hsl(233, 100%, 69%);
+
+/* NEUTRAL COLORS */
+
+--clr-neutral-grayblue-200: hsl(201, 11%, 66%);
+--clr-neutral-grayblue-700: hsl(210, 10%, 33%);
+
+/* FONTS */
+
+  --ff-main: 'Bai Jamjuree', sans-serif;
+}
+
+/* GENERAL STYLES */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: var(--ff-main);
+}
+
+/* HERO SECTION */
+
+.hero {
+  background: url("images/bg-header-mobile.png") no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.hero__logo {
+  padding-block: 6.8em 3.3em;
+}
+
+.hero__title {
+  color: var(--clr-neutral-grayblue-700);
+  font-size: 2rem;
+  padding-block-end: 1rem;
+  padding-inline: 1.6rem;
+}
+
+.hero__text {
+  color: var(--clr-neutral-grayblue-200);
+  font-size: 1rem;
+  line-height: 1.6;
+  padding-inline: 2.1rem;
+  padding-block-end: 3rem;
+}
+
+.hero__btn-holder {
+  margin-block-end: 3rem;
+}
+
+.btn {
+  all: unset;
+  color: white;
+  display: block;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 35px;
+  font-weight: 600;
+  width: 75%;
+  cursor: pointer;
+}
+
+.btn-ios {
+  background: var(--clr-primary-cyan);
+  margin-block-end: 1rem;
+  box-shadow: 0 3px 0 0 hsl(171, 66%, 37%);
+}
+
+.btn-mac {
+  background: var(--clr-primary-blue);
+  box-shadow: 0 3px 0 0 hsl(233, 63%, 59%);
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 760px) {
+
+.hero {
+  background: url(images/bg-header-desktop.png) no-repeat;
+}
+
+.hero__title {
+  font-size: 3rem;
+}
+
+.hero__text {
+  width: 50%;
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  width: auto;
+  padding: 1rem 2.7rem;
+}
+
+.btn-ios {
+  margin-block-end: 0;
+  margin-inline-end: 1rem;
+}
+
+}
