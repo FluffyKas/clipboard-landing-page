@@ -59,8 +59,8 @@ body {
   padding-block-end: 3rem;
 }
 
-.hero__btn-holder {
-  margin-block-end: 3rem;
+.btn-holder {
+  margin-block-end: 10rem;
 }
 
 .btn {
@@ -78,21 +78,87 @@ body {
 
 .btn-ios {
   background: var(--clr-primary-cyan);
-  margin-block-end: 1rem;
-  box-shadow: 0 3px 0 0 hsl(171, 66%, 37%);
+  margin-block-end: 1.5rem;
+  border-bottom: 3px solid hsl(171, 66%, 37%);
+  box-shadow: 0 5px 15px hsla(171, 66%, 37%, .4);
+  opacity: 1;
+  transition: all .2s ease;
+}
+
+.btn-ios:hover {
+  opacity: .8;
 }
 
 .btn-mac {
   background: var(--clr-primary-blue);
-  box-shadow: 0 3px 0 0 hsl(233, 63%, 59%);
+  border-bottom: 3px solid hsl(233, 63%, 59%);
+  box-shadow: 0 5px 15px hsla(233, 63%, 59%, .4);
+  opacity: 1;
+  transition: all .2s ease;
+}
+
+.btn-mac:hover {
+  opacity: .8;
+}
+
+/* SNIPPETS SECTION */
+
+.snippets {
+  margin-block-end: 10rem;
+}
+
+.snippets__title {
+  padding-inline: 2rem;
+  text-align: center;
+  margin-block-end: 4rem;
+}
+
+.snippets__title h2 {
+  color: var(--clr-neutral-grayblue-700);
+  font-size: 1.75rem;
+  padding-block-end: 1rem;
+}
+
+.snippets__title p {
+  color: var(--clr-neutral-grayblue-200);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.options__img-holder img {
+  max-width: 100%;
+  height: auto;
+  padding-inline: 2rem;
+  margin-block-end: 3.3rem;
+}
+
+.option {
+  text-align: center;
+  padding-inline: 2rem;
+  padding-block-end: 3rem;
+}
+
+.option h3 {
+  color: var(--clr-neutral-grayblue-700);
+  font-size: 1.5rem;
+  padding-block-end: .6rem;
+}
+
+.option p {
+  color: var(--clr-neutral-grayblue-200);
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
 /* MEDIA QUERIES */
 
 @media (min-width: 760px) {
 
+/* HERO SECTION */
+
 .hero {
   background: url(images/bg-header-desktop.png) no-repeat;
+  background-size: cover;
 }
 
 .hero__title {
@@ -100,7 +166,7 @@ body {
 }
 
 .hero__text {
-  width: 50%;
+  width: 55%;
   font-size: 1.2rem;
   margin: 0 auto;
 }
@@ -108,7 +174,7 @@ body {
 .btn {
   display: inline-block;
   width: auto;
-  padding: 1rem 2.7rem;
+  padding: 1rem 2rem;
 }
 
 .btn-ios {
