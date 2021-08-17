@@ -71,7 +71,7 @@ body {
 }
 
 .btn-holder {
-  margin-block-end: 10rem;
+  margin-block-end: 9rem;
 }
 
 .btn {
@@ -288,6 +288,8 @@ footer {
 
 .social-media a {
   color: hsla(210, 10%, 33%, .9);
+  font-size: 1.5rem;
+  transition: color .2s ease;
 }
 
 .social-media a:hover {
@@ -300,6 +302,7 @@ footer {
 
 .title {
   font-size: 2.2rem;
+  padding-block-end: 1.2rem;
 }
 
 .text {
@@ -336,31 +339,53 @@ footer {
 
 /* SNIPPETS SECTION */
 
-.snippets__title h2 {
-  padding-block-end: 1.2rem;
-}
-
 .snippets__title p {
   max-width: 730px;
   margin: 0 auto;
+  padding-block-end: 3rem;
 }
 
 .options__img-holder {
   text-align: center;
 }
 
+.options-details {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+/* ACCESSS SECTION  */
+
+.access__text {
+  width: 50%;
+  margin: 0 auto;
+  padding-block-end: 6rem;
+}
 
 /* WORKFLOW SECTION */
 
 .workflow__features {
   flex-direction: row;
   justify-content: space-around;
+  align-items: flex-start;
+  padding-inline: 6rem;
+}
+
+.feature {
+  width: 100%;
+}
+
+.feature__img-holder {
+  height: 100px;
 }
 
 /* BRANDS SECTION */
 
 .brands {
+  margin-block-start: 10rem;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5rem;
 }
 
 /* CTA SECTION */
@@ -379,49 +404,64 @@ footer {
   padding-block: 2rem;
 }
 
-.footer-left {
-  display: flex;
-  align-items: center;
-}
-
-.footer-menu-container {
-  display: flex;
-  flex-direction: row;
-  gap: 6rem;
-  padding-block: 0;
-  padding-inline-start: 8rem;
-}
-
-.footer-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 1.4rem;
-}
-
 }
 
 @media (min-width: 1300px) {
+
+  /* SNIPPETS SECTION */
+
   .snippets__options {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: relative;
   }
   
   .options-details {
-    width: 27%;
+    width: 45%;
+    max-width: 40rem;
+    padding-block-start: 5rem;
+    padding-inline-end: 14rem;
+    margin: 0;
   }
-  
+
   .options__img-holder img {
     position: absolute;
-    left: -10%;
+    left: -5%;
     top: 0;
-    padding-inline: 2rem;
-    margin-block-end: 3.3rem;
+    margin-block-end: 3rem;
   }
   
   .option {
     text-align: left;
   }
+
+  /* ACCESS SECTION */
+
+  .access {
+    padding-block-start: 4rem;
+  }
+
+  /* FOOTER SECTION */
+
+  .footer-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-menu-container {
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    padding-block: 0;
+    padding-inline-start: 8rem;
+  }
+  
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.4rem;
+  }
+  
 }
