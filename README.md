@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://fluffykas.github.io/clipboard-landing-page/)
+[Solution URL](https://fluffykas.github.io/clipboard-landing-page/)
 
 ## My process
 
